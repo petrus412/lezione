@@ -7,8 +7,7 @@ int main()
 {
 	int matrice[5][6];
 	int copia[5][6];
-	ofstream outfile;
-	outfile.open("matrice.txt");
+	ofstream outfile("matrice.txt");
 	
 	for (int i = 0; i < 5; i++)
 	{
@@ -20,8 +19,7 @@ int main()
 		outfile << endl;
 	}
 	outfile.close();
-	ifstream infile;
-	infile.open("matrice.txt");
+	ifstream infile("matrice.txt");
 	for (int i = 0; i < 5; i++)
 	{
 		for (int x = 0; x < 6; x++)

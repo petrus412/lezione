@@ -5,11 +5,10 @@ using namespace std;
 
 int main()
 {
-	char data[100];
 	int matrice[5][6];
 	int copia[5][6];
 	ofstream outfile;
-	outfile.open("matrice.txt", ios::trunc);
+	outfile.open("matrice.txt");
 	
 	for (int i = 0; i < 5; i++)
 	{
